@@ -54,6 +54,7 @@ function addListenerHitBox(){
                 state.view.lives.innerText = lives;                 
                 if (lives <=0){
                     alert("Game Over! O seu resultado foi de " + state.view.score.innerText + "!");
+                    window.location.reload();
                 }               
             }        
         })
@@ -68,6 +69,7 @@ function timeCountdown(){
     state.view.timeLeft.textContent = state.values.currentTime;
     if (state.values.currentTime <= 0){
         alert("Game Over! O seu resultado foi de " + state.view.score.innerText + "!");
+        window.location.reload();
     }
     
 }
